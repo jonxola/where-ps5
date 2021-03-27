@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "whereps5"
+version = "1.0.0"
+description = "Check for PS5 availability across multiple retailers, instantly, and from the terminal."
+authors = ["jonxola"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+selenium = "^3.141.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+whereps5 = "whereps5:check"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
